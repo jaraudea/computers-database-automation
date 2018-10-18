@@ -41,3 +41,7 @@ Then(/^The (.*?)d computer should be shown in result table$/, async (computerAct
     const data = await computerResultPage.geFirstRowFromResultTable();
     expect(expectedData).to.deep.eql(data);
 });
+
+Then(/^Validates no computers message on header$/, async () => {
+    expect('No computers found').equal(await computerResultPage.totalComputersHeader.getText());
+});

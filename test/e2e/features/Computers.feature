@@ -36,3 +36,5 @@ Feature: To validate CRUD operations in computers database
         And Click on first computer name on result table
         When Click on delete button
         Then Validates that delete computer success message is shown
+        When I search for previous updated computer
+        And Validates no computers message on header
