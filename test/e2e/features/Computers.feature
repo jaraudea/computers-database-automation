@@ -15,7 +15,7 @@ Feature: To validate CRUD operations in computers database
          When Click on first computer name on result table
          Then Validates that created computer data is the same
 
-    Scenario: Edit computer
+    Scenario: Edit created computer
         Given I go to computers result page
         And I search for previous created computer
         When Click on first computer name on result table
