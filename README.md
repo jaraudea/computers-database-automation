@@ -7,7 +7,7 @@ Test automation for CRUD operations on computers database application
 1.NodeJS installed globally in the system.
 https://nodejs.org/en/download/
 
-2.Chrome browser installed.
+2.Chrome browser v68-70 installed.
 
 
 #### Setup Scripts
