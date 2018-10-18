@@ -1,0 +1,53 @@
+{
+    "name": "computers-database-automation",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "",
+    "homepage": "",
+    "keywords": [
+        "protractor",
+        "cucumber",
+        "chai",
+        "typescript",
+        "angular",
+        "testing",
+        "behaviour driven development",
+        "bdd",
+        "selenium",
+        "webdriverJS",
+        "gherkin",
+        "automation testing",
+        "integration testing",
+        "superagent"
+    ],
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "clean": "rimraf typeScript/",
+        "clean-build": "npm run clean && npm run build",
+        "test": "protractor typeScript/protractor-cucumber.conf.js",
+        "clean-test": "npm run clean-build && npm run webdriver-update && npm test",
+        "webdriver-update": "webdriver-manager update --versions.chrome 2.42 --gecko=false",
+        "webdriver-start": "webdriver-manager start"
+    },
+    "author": "",
+    "devDependencies": {
+        "@types/chai": "^4.1.6",
+        "@types/cucumber": "^4.0.4",
+        "@types/node": "^10.11.7",
+        "@types/selenium-webdriver": "^3.0.12",
+        "@types/superagent": "^3.8.4",
+        "chai": "^4.2.0",
+        "chai-as-promised": "^7.1.1",
+        "cucumber": "^5.0.2",
+        "cucumber-html-reporter": "^4.0.4",
+        "mkdirp": "^0.5.1",
+        "protractor": "^5.4.1",
+        "protractor-cucumber-framework": "^6.1.1",
+        "rimraf": "^2.6.2",
+        "superagent": "^4.0.0-beta.5",
+        "ts-node": "^7.0.1",
+        "typescript": "^3.1.3"
+    },
+    "repository": ""
+}

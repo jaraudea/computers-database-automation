@@ -59,3 +59,13 @@ typings/
 
 # next.js build output
 .next
+
+# Typescript compiler
+typeScript/
+
+# Reports generated
+reports/
+
+# idea
+.DS_Store
+.idea
